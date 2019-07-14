@@ -20,6 +20,7 @@
   border-radius: 50%;
   transform: rotate(360deg) scale(1.2);
   line-height:31px;
+  margin: 0 18px 14px 0;
 }
 .woman {
   display: table-cell;
@@ -30,6 +31,7 @@
   border-radius: 50%;
   transform: rotate(360deg) scale(1.2);
   line-height:31px;
+  margin: 0 18px 14px 0;
 }
 .dummy {
   background: white;
