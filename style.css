@@ -7,7 +7,7 @@
   background: darkgoldenrod;
   cursor: pointer;
   transition: 0.8s;
-  margin: 0 18px 18px 0;
+  margin: 0 18px 8px 0;
   text-align: center;
   line-height:35px;
 }
@@ -15,20 +15,21 @@
   display: table-cell;
   display: inline-block;
   vertical-align: top;
-  font-size: 2px;
+  font-size: 16px;
   background: skyblue;
   border-radius: 50%;
   transform: rotate(360deg) scale(1.2);
-  margin: 0 18px 0px 0;
+  line-height:31px;
 }
 .woman {
   display: table-cell;
   display: inline-block;
   vertical-align: top;
-  font-size: 2px;
+  font-size: 16px;
   background: pink;
   border-radius: 50%;
   transform: rotate(360deg) scale(1.2);
+  line-height:31px;
 }
 .dummy {
   background: white;

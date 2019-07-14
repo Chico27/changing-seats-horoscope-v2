@@ -2,6 +2,7 @@ const line = 6;
 const column = 6;
 const maxSeats = 40;
 var limitCt = 0;
+var indexCt = 0;
 window.onload = function() {
   let k = 1;
   for (let i = 1; i <= line; i++) {
@@ -35,11 +36,12 @@ window.onload = function() {
 var setSheat = function(clickedButton) {
   let setCt = true;
   while(setCt  && limitCt < maxSeats){
-    let seatCt = Math.floor(Math.random() * 40 + 1);
+    let seatCt = Math.floor(Math.random() * maxSeats + 1);
     let attr = document.getElementById("seat_" + seatCt);
     if (!attr.classList.contains('man') && !attr.classList.contains('woman')){
       attr.classList.add(clickedButton);
-      attr.innerHTML=seatCt;
+      indexCt++;
+      attr.innerHTML=indexCt;
       setCt = false;
       limitCt++;
     }
@@ -59,4 +61,5 @@ var reset = function() {
       }
   }
   limitCt = 0;
+  indexCt = 0;
 };
